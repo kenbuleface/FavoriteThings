@@ -1,0 +1,52 @@
+body {
+    background-color: antiquewhite;
+    color: green;
+}
+/* Styling the list of items in the nav bar*/
+nav ul {
+    display:flex;
+    flex-wrap:wrap;
+    margin:0;
+    padding:0;
+    z-index: 10;
+}
+/* Styling the space of each item */
+nav li {
+    display:flex;
+    margin:0;
+    list-style:none;
+    min-width:200px;
+    flex:1;
+    text-align:center;
+    background-color:Blue;
+    color:black;
+    position:relative;
+}
+/* Styling the link, both unvisited and visted */
+nav a, nav a:visited{
+    text-decoration:none;
+    width:100%;
+    padding:8px 0;
+    color:Black;
+}
+/* Hovering over a link */
+nav a:hover, nav a.active{
+    color:Black;
+    background-color: Blue;
+}
+.dropdown-content {
+    position:absolute;
+    top:34px;
+    width:100%;
+    display:none;
+    z-index:20;
+}
+nav li:hover .dropdown-content {
+    display:block;
+}
+.dropdown-content a {
+    font-weight: bold;
+}
+.dropdown-content ul {
+    flex-direction:column;
+}
